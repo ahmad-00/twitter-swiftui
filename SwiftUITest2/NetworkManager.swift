@@ -24,7 +24,7 @@ class NetworkManager {
             let url = URL(string: "https://api.twitter.com/1.1/search/tweets.json?q=\(searchQuery)")!
 
             var request = URLRequest(url: url)
-            request.setValue("Bearer AAAAAAAAAAAAAAAAAAAAAG%2FwNQEAAAAAOhGa8SXKr5K%2BC6uMRhUjaUWmQpI%3DsaGeDPkRnZyu0J2JCLzJVr6mGytM5Y815SwG8IVXvu3zrlTmgt", forHTTPHeaderField: "Authorization")
+            request.setValue("Set Your Token Here", forHTTPHeaderField: "Authorization")
             
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                 
